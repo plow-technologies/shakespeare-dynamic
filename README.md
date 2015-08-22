@@ -4,6 +4,7 @@ Shakespeare Dynamic
 To build you need GHCJS and run:
 
 ```bash
+git submodule update --init --recursive
 cd ghcjs-shakespeare-dynamic
 ./rebuildSandbox.sh
 cabal build
