@@ -1,18 +1,12 @@
 Shakespeare Dynamic
 =================
 
-To build the different components you will need:
-Shakespeare Dynamic
-=================
+To build you need GHCJS and run:
 
-To build the different components you will need:
-```
-shakespeare-dynamic/vdom-adapter
-ghcjs-ffiqq
-ghcjs-vdom
-stm-notify
-ghcjs-canvas
-ghcjs-jquery
+```bash
+cd ghcjs-shakespeare-dynamic
+./rebuildSandbox.sh
+cabal build
 ```
 
 vdom-adapter

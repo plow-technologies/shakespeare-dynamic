@@ -1,0 +1,15 @@
+[submodule "ghcjs-shakespeare-dynamic/ghcjs-canvas"]
+	path = ghcjs-shakespeare-dynamic/ghcjs-canvas
+	url = https://github.com/ghcjs/ghcjs-canvas.git
+[submodule "ghcjs-shakespeare-dynamic/ghcjs-jquery"]
+	path = ghcjs-shakespeare-dynamic/ghcjs-jquery
+	url = https://github.com/ghcjs/ghcjs-jquery.git
+[submodule "ghcjs-shakespeare-dynamic/ghcjs-vdom"]
+	path = ghcjs-shakespeare-dynamic/ghcjs-vdom
+	url = git@github.com:plow-technologies/ghcjs-vdom.git
+[submodule "ghcjs-shakespeare-dynamic/ghcjs-ffiqq"]
+	path = ghcjs-shakespeare-dynamic/ghcjs-ffiqq
+	url = https://github.com/ghcjs/ghcjs-ffiqq.git
+[submodule "ghcjs-shakespeare-dynamic/stm-notify"]
+	path = ghcjs-shakespeare-dynamic/stm-notify
+	url = git@github.com:plow-technologies/stm-notify.git

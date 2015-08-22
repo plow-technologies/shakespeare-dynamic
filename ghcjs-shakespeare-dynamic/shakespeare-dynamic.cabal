@@ -44,7 +44,7 @@ Library
                       , pipes
                       , pipes-concurrency
                       , stm
-                      , stm-notify
+                      , stm-notify   >= 0.0.4
                       , vdom-adapter >= 0.0.2
                       , trifecta
                       , parsers
@@ -75,7 +75,7 @@ executable example
                 , pipes-concurrency
                 , transformers
                 , stm
-                , stm-notify
+                , stm-notify        >= 0.0.4
 
   ghcjs-Options:    -O -Wall
 
@@ -88,6 +88,8 @@ Test-Suite spec
   Main-Is:              Spec.hs
   Build-Depends:        base
                       , hspec
+                      , stm
+                      , stm-notify        >= 0.0.4
                       , shakespeare-dynamic
 
 Source-Repository head
