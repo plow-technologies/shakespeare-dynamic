@@ -14,10 +14,10 @@ import           VDOM.Adapter
 import           Control.Applicative
 import           Control.Concurrent.STM.Message
 import           Control.Monad
+import qualified Data.Map                              as Map
+import qualified Data.Sequence                         as S
 import           Data.Traversable
 import           Text.Read
-import qualified Data.Map as Map
-import qualified Data.Sequence as S
 
 
 -- class HasBox a where
@@ -25,7 +25,7 @@ import qualified Data.Sequence as S
 --   boxWith :: (Event a -> Message b) -> [Property] -> LiveVDom JSEvent
 
 -- instance HasBox String where
---   box = 
+--   box =
 
 -- | A basic button component with the default of accepting an STM Address
 button :: Address (Event ()) -> [Property] -> String -> LiveVDom JSEvent
@@ -106,7 +106,7 @@ option True opt = [gertrude|
 
 forEach :: STMMailbox (S.Seq a) -- ^ Values to map over
           -> (a -> (Maybe a -> Message ()) -> LiveVDom b) -- ^ Function to generate dom given an element and a function to change the current value
-          -> STMEnvelope (S.Seq (LiveVDom b))     
+          -> STMEnvelope (S.Seq (LiveVDom b))
 forEach mb func = (fmap buildDom) <$> withIndeces
   where withIndeces = S.zip <$> stmIndexList <*> env
         stmIndexList = (increasingSeq . S.length) <$> env
